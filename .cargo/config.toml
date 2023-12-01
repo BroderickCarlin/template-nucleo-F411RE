@@ -1,0 +1,13 @@
+[target.'cfg(all(target_arch = "arm", target_os = "none"))']
+# replace with your chip as listed in `probe-rs chip list`
+runner = "probe-rs run --chip STM32F411RETx"
+
+[build]
+target = "thumbv7em-none-eabi"
+
+[env]
+DEFMT_LOG = "trace"
+
+[profile.release]
+# Allows defmt to display log locations even in release
+debug = true
