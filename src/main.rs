@@ -2,8 +2,8 @@
 #![no_main]
 #![feature(type_alias_impl_trait)]
 
-use embassy_executor::Spawner;
 use defmt::info;
+use embassy_executor::Spawner;
 use {defmt_rtt as _, panic_probe as _}; // global logger
 
 #[embassy_executor::main]
