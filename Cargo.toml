@@ -13,6 +13,8 @@ license = "MIT OR Apache-2.0"
 [dependencies]
 embassy-stm32 = { git = "https://github.com/embassy-rs/embassy", features = ["defmt", "stm32f411re", "unstable-pac", "memory-x", "time-driver-any", "exti", "chrono"]  }
 embassy-executor = { git = "https://github.com/embassy-rs/embassy", features = ["nightly", "arch-cortex-m", "executor-thread", "executor-interrupt", "defmt", "integrated-timers"] }
+embassy-time = { git = "https://github.com/embassy-rs/embassy", features = ["defmt", "defmt-timestamp-uptime", "tick-hz-32_768"] }
+embassy-sync = { git = "https://github.com/embassy-rs/embassy", features = ["defmt"] }
 
 defmt = "0.3"
 defmt-rtt = "0.4"
